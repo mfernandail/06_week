@@ -18,6 +18,19 @@ botones.forEach((boton) => {
         display.textContent = "Error"
         operacion = ""
       }
+    } else if(valor === "√") {
+      try {
+        operacion = Math.sqrt(eval(operacion)).toString()
+        display.textContent = operacion
+      }
+      catch {
+        display.textContent = "Error"
+        operacion = ""
+      }
+    } else if(valor === "AC") {
+      operacion = operacion.slice(0, -1)
+      display.textContent = operacion || "0"
+      
     } else {
       operacion += valor
       display.textContent = operacion
