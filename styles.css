@@ -36,11 +36,21 @@ main{
   flex-grow: 1;
 }
 
+#calculo {
+  display: none;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 10px 0px;
+  background-color: #333333ea;
+  color: #fff;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+
 .calculadora {
   width: 260px;
   padding: 20px;
   border-radius: 12px;
-  /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
 }
 
 .display {
