@@ -36,6 +36,12 @@ main{
   flex-grow: 1;
 }
 
+h4 {
+  
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
 #calculo {
   display: none;
   text-align: center;
@@ -83,17 +89,13 @@ main{
   transition: background-color 0.2s;
 }
 
-.btn:hover {
-  background-color: #ddd;
-}
-
 .operador {
   background-color: #f9a600;
 }
 
 .limpiar {
   background-color: #ef5350;
-  color: white;
+  color: #fff;
   grid-column: span 2;
   width: 100px;
   border-radius: 10px;
@@ -103,5 +105,21 @@ main{
 
 #igual {
   background-color: #64dd17;
-  color: white;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #3333339f;
+}
+
+.operador:hover {
+  background-color: #f9a600ab;
+}
+
+#igual:hover {
+  background-color: #64dd17b3;
+}
+
+.limpiar:hover {
+  background-color: #ef5350b3;
 }
