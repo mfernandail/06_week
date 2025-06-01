@@ -12,6 +12,7 @@ body {
   grid-template-rows: auto 1fr auto;
   height: 100vh;
 }
+
 header {
   background-color: #333;
   color: white;
@@ -28,17 +29,23 @@ footer {
   bottom: 0;
 }
 
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
 .calculadora {
   width: 260px;
-  background: white;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
 }
 
 .display {
   height: 50px;
-  background: #222;
+  background: #333;
   color: #fff;
   font-size: 2rem;
   text-align: right;
@@ -55,10 +62,13 @@ footer {
 
 .btn {
   padding: 15px;
+  width: 50px;
+  height: 50px;
   font-size: 1.2rem;
   border: none;
-  background-color: #eee;
-  border-radius: 8px;
+  background-color: #333;
+  color: white;
+  border-radius: 50%;
   cursor: pointer;
   transition: background-color 0.2s;
 }
@@ -68,16 +78,20 @@ footer {
 }
 
 .operador {
-  background-color: #fdd835;
+  background-color: #f9a600;
+}
+
+.limpiar {
+  background-color: #ef5350;
+  color: white;
+  grid-column: span 2;
+  width: 100px;
+  border-radius: 10px;
+  height: 35px;
+  padding: 5px;
 }
 
 #igual {
   background-color: #64dd17;
-  color: white;
-}
-
-.limpiar {
-  grid-column: span 4;
-  background-color: #ef5350;
   color: white;
 }
